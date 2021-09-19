@@ -365,6 +365,7 @@
         source += 'case ' + str(keyword) + ': return ' + str(tokenType) + '\n'
       })
       source += '}\n'
+      source += 'break\n'
     }
     source += '}\n'
     return Function('value', source) // type
